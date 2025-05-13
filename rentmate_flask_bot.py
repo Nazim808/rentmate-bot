@@ -1,10 +1,10 @@
-
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
+import os
 
 app = Flask(__name__)
 
-# In-memory store for demonstration (use Firebase or DB in production)
+# In-memory store for demonstration
 items_for_rent = []
 active_rentals = []
 
